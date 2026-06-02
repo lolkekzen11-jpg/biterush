@@ -1,0 +1,141 @@
+.hero {
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(rgba(26, 26, 26, 0.55), rgba(26, 26, 26, 0.55)),
+    url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero h1 {
+  font-size: 54px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.primary-btn {
+  background: var(--primary) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 700;
+}
+
+.section-title {
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.promo-slide {
+  background: var(--primary);
+  color: white;
+  border-radius: 20px;
+  padding: 40px;
+  min-height: 150px;
+}
+
+.promo-slide h3 {
+  font-weight: 800;
+}
+
+.category-card {
+  border: none;
+  background: var(--surface);
+  border-radius: 18px;
+  transition: 0.2s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-icon {
+  font-size: 36px;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.hits-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.hit-card {
+  min-width: 220px;
+  border-radius: 18px;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    min-height: 380px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+}
+.card {
+  height: auto !important;
+}
+
+.card-body {
+  min-height: auto !important;
+}
+
+.delivery-map-placeholder {
+  position: relative;
+  height: 400px;
+  background: #eef3f0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid #ddd;
+}
+
+.zone {
+  position: absolute;
+  border-radius: 24px;
+  padding: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.free-zone {
+  width: 45%;
+  height: 45%;
+  top: 25%;
+  left: 25%;
+  background: rgba(76, 186, 176, 0.85);
+}
+
+.paid-zone {
+  width: 75%;
+  height: 70%;
+  top: 15%;
+  left: 12%;
+  background: rgba(255, 193, 7, 0.55);
+  color: #1a1a1a;
+}
+
+.restaurant-marker {
+  position: absolute;
+  top: 47%;
+  left: 45%;
+  background: #ff5100;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 800;
+}
